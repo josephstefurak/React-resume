@@ -21,10 +21,11 @@ function App() {
     var location = "University Park, PA";
     var college = "College of Engineering";
     var year = "August 2022 - Present";
-    var major = "Major: CMPSC_BS (Comp Sci - Univ Park)";
+    var major = "Bachelor of Science in Computer Science ";
     var minor = "Minor: MATH_UMNR (Mathematics)";
     var certificate = "Certificate: SCBC_UCT (Smeal Business Cert)";
     var gpa = "GPA: 4.00";
+    var grad = "Intended Graduation: December 2025";
     document.getElementById("schoolname").innerHTML = school;
     document.getElementById("location").innerHTML = location;
     document.getElementById("college").innerHTML = college;
@@ -33,6 +34,7 @@ function App() {
     document.getElementById("minor").innerHTML = minor;
     document.getElementById("certificate").innerHTML = certificate;
     document.getElementById("gpa").innerHTML = gpa;
+    document.getElementById("grad").innerHTML = grad;
   }
 
   function hideEducation() {
@@ -44,13 +46,14 @@ function App() {
     document.getElementById("minor").innerHTML = empty;
     document.getElementById("certificate").innerHTML = empty;
     document.getElementById("gpa").innerHTML = empty;
+    document.getElementById("grad").innerHTML = empty;
   }
 
   function showWorkExperience() {
     var company = "Stefurak Limited Investments";
     var position = "Founder/Operator";
     var when = "May 2022 - Present";
-    var what = "Domestic LLC with activity in:";
+    var what = "Founded a domestic LLC with activity in:";
     var stock = "1. Stock Option Trading";
     var crypto = "2. Cryptocurrency Investing";
     var real = "3. Real Estate Investing";
@@ -131,10 +134,10 @@ function App() {
   function showProjects(){
     var coursescheduler = "Course Scheduler | Java, SQL ";
     var resumeapp = "Interactive Resume Application | JavaScript, React, HTML, CSS";
-    var p11 = "Desktop application created using Java and SQL";
-    var p12 = "Application allows for users to input academic data and make organizational operations";
-    var p13 = "Stores information, and returns real-time data, regarding logistical constraints";
-    var p21 = "Local browser application created utilizing JavaScript, HTML, CSS, and React";
+    var p11 = "Created a desktop application using Java and SQL ";
+    var p12 = "This interactive application allows for users to input academic data and make organizational operations";
+    var p13 = "The application stores information using databases, processes logistical constraints, and returns real-time data and feedback";
+    var p21 = "Created a browser application utilizing JavaScript, HTML, CSS, and React";
     var p22 = "Application interactively displays this resume";
     document.getElementById("coursescheduler").innerHTML = coursescheduler;
     document.getElementById("resumeapp").innerHTML = resumeapp;
@@ -200,6 +203,7 @@ function App() {
             <div id = "minor"></div>
             <div id = "certificate"></div>
             <div2 id = "gpa"></div2>
+            <div2 id = "grad"></div2>
 
           </section>
           <button type="button" id="1" onClick={showEducation}>Show</button>
