@@ -1,17 +1,30 @@
+body {
+  background-color: #282c34
+}
+
+
 h1 {
+  position: relative;
+  offset-block-start: -300px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
+  color: #61dafb;
+  margin-right: 300px;
 }
 
 h2 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  color: #61dafb;
+  margin-right: 300px;
 }
 
 h3 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  color: #61dafb;
+  margin-right: 300px;
 }
 
 h4 {
@@ -19,11 +32,50 @@ h4 {
   margin-left: 20px;
   font-size: 20px;
   text-decoration-line: underline;
+  color: goldenrod
 }
+
 
 button {
   margin-left: 20px;
   margin-top: 15px;
+  background-color: #282c34;
+  border-radius: 10px;
+
+}
+
+button:hover {
+  font-size: 14px
+}
+
+.button1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  border: #61dafb;
+  background-color: #282c34;
+  border-radius: 10px;
+  border-color: #61dafb;
+  color: #61dafb;
+  border-style: outset;
+}
+
+.button1:hover {
+  font-size: 14px
+}
+
+.button2 {
+  margin-left: 20px;
+  margin-top: 15px;
+  border: #282c34;
+  background-color: #282c34;
+  border-radius: 10px;
+  border-color: #282c34;
+  color: #282c34;
+  border-style: outset;
+}
+
+.button2:hover {
+  font-size: 14px
 }
 
 footer {
@@ -39,6 +91,7 @@ div1 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #61dafb
 }
 
 div {
@@ -46,6 +99,7 @@ div {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   margin-top: 15px;
+  color: linen
 }
 
 div2 {
@@ -53,6 +107,7 @@ div2 {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #61dafb
 }
 
 div3 {
@@ -69,6 +124,7 @@ li {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   margin-top: 10px;
+  color: #61dafb
 }
 
 li2 {
@@ -83,14 +139,69 @@ div4 {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #61dafb
+}
+
+hr.animated1 {
+  animation-duration: 8s;
+  animation-name: slidein;
+}
+
+hr.animated2 {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-delay: 0.5s;
+}
+
+hr.animated3 {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-delay: 1s;
+}
+
+hr.animated4 {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-delay: 1.5s;
+}
+
+hr.animated5 {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-delay: 2s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
 }
 
 img {
   margin-left: 100px;
 }
 
+img.headshot {
+  
+  height: 200px;
+  width: 200px;
+  
+  float: left;
+}
+
 image3 {
   width: 150px;
+}
+
+link {
+  color:blue;
 }
 
 .App {
